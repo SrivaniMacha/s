@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration</title>
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form id="registrationForm" onsubmit="function solution()">
+    <label>First Name: <input type="text" id="firstName" required></label><br><br>
+    <label>Last Name: <input type="text" id="lastName" required></label><br><br>
+    <label>Email: <input type="email" id="email" required></label><br><br>
+    <label>Age: <input type="number" id="age" required></label><br><br>
+    <label>Date of Birth: <input type="date" id="dob" required></label><br><br>
+    <button type="submit">Register</button>
+  </form>
+
+  <script>
+    function solution(){
+        alert("successfully registered");
+        window.location.href="success.html";
+        return false;
+    }
+  </script>
+</body>
+</html>
